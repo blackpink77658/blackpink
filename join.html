@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLACKPINK | Join BLINK</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { bpPink: '#ff007f', bpDark: '#080808', bpCard: '#141414' }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Montserrat', sans-serif; background-color: #080808; color: #ffffff; }
+        .glow-pink { box-shadow: 0 0 30px rgba(255, 0, 127, 0.4); }
+        .text-glow { text-shadow: 0 0 15px rgba(255, 0, 127, 0.7); }
+    </style>
+</head>
+<body class="bg-bpDark text-white selection:bg-bpPink selection:text-white">
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-black/85 backdrop-blur-md border-b border-zinc-900">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="beranda.html" class="text-2xl font-black tracking-widest text-bpPink text-glow">BLACKPINK</a>
+            <div class="hidden md:flex space-x-8 text-xs font-bold tracking-widest uppercase">
+                <a href="beranda.html" class="hover:text-bpPink transition text-zinc-400">Beranda</a>
+                <a href="members.html" class="hover:text-bpPink transition text-zinc-400">Members</a>
+                <a href="discography.html" class="hover:text-bpPink transition text-zinc-400">Discography</a>
+                <a href="gallery.html" class="hover:text-bpPink transition text-zinc-400">Gallery</a>
+                <a href="join.html" class="text-bpPink transition">Join Blink</a>
+            </div>
+            <a href="join.html" class="hidden md:block bg-bpPink text-white px-6 py-2.5 rounded-full font-bold text-xs tracking-widest uppercase hover:bg-pink-600 transition glow-pink">
+                Subscribe
+            </a>
+        </div>
+    </nav>
+
+    <!-- JOIN BLINK SECTION -->
+    <section class="py-36 px-6 max-w-xl mx-auto text-center">
+        <span class="text-bpPink font-bold text-xs tracking-widest uppercase">Stay Connected</span>
+        <h2 class="text-4xl md:text-5xl font-black mt-2 mb-4 tracking-tight">Join The BLINK Community</h2>
+        <p class="text-zinc-400 text-xs md:text-sm mb-8 font-light leading-relaxed">Dapatkan update terbaru seputar jadwal rilisan, konser tur dunia, dan eksklusif merchandise BLACKPINK langsung ke email kamu.</p>
+        <form onsubmit="alert('Terima kasih telah bergabung dengan komunitas BLINK!'); return false;" class="flex flex-col gap-4">
+            <input type="text" placeholder="Nama Lengkap..." required class="bg-bpCard border border-zinc-800 rounded-full px-6 py-4 text-xs md:text-sm focus:outline-none focus:border-bpPink text-white">
+            <input type="email" placeholder="Alamat Email Kamu..." required class="bg-bpCard border border-zinc-800 rounded-full px-6 py-4 text-xs md:text-sm focus:outline-none focus:border-bpPink text-white">
+            <button type="submit" class="bg-bpPink text-white font-bold px-8 py-4 rounded-full text-xs tracking-widest uppercase hover:bg-pink-600 transition glow-pink mt-2">
+                Subscribe Now
+            </button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 text-center text-zinc-600 text-[10px] border-t border-zinc-900 uppercase tracking-widest">
+        <p>&copy; 2026 BLACKPINK Fan Hub. Designed for BLINKs Worldwide.</p>
+    </footer>
+
+</body>
+</html>
