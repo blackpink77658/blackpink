@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLACKPINK | Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { bpPink: '#ff007f', bpDark: '#080808', bpCard: '#141414' }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Montserrat', sans-serif; background-color: #080808; color: #ffffff; }
+        .glow-pink { box-shadow: 0 0 30px rgba(255, 0, 127, 0.4); }
+        .text-glow { text-shadow: 0 0 15px rgba(255, 0, 127, 0.7); }
+    </style>
+</head>
+<body class="bg-bpDark text-white selection:bg-bpPink selection:text-white">
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-black/85 backdrop-blur-md border-b border-zinc-900">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="beranda.html" class="text-2xl font-black tracking-widest text-bpPink text-glow">BLACKPINK</a>
+            <div class="hidden md:flex space-x-8 text-xs font-bold tracking-widest uppercase">
+                <a href="beranda.html" class="hover:text-bpPink transition text-zinc-400">Beranda</a>
+                <a href="members.html" class="hover:text-bpPink transition text-zinc-400">Members</a>
+                <a href="discography.html" class="hover:text-bpPink transition text-zinc-400">Discography</a>
+                <a href="gallery.html" class="text-bpPink transition">Gallery</a>
+                <a href="join.html" class="hover:text-bpPink transition text-zinc-400">Join Blink</a>
+            </div>
+            <a href="join.html" class="hidden md:block bg-bpPink text-white px-6 py-2.5 rounded-full font-bold text-xs tracking-widest uppercase hover:bg-pink-600 transition glow-pink">
+                Subscribe
+            </a>
+        </div>
+    </nav>
+
+    <!-- GALLERY SECTION -->
+    <section class="py-32 px-6 max-w-7xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <span class="text-bpPink font-bold text-xs tracking-widest uppercase">Visual Experience</span>
+            <h2 class="text-4xl md:text-5xl font-black mt-2 tracking-tight">The Pink & Black Era</h2>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="h-64 bg-bpCard rounded-2xl flex items-center justify-center border border-zinc-800 hover:border-bpPink transition group">
+                <i class="fa-solid fa-camera text-3xl text-zinc-600 group-hover:text-bpPink transition"></i>
+            </div>
+            <div class="h-64 bg-bpCard rounded-2xl flex items-center justify-center border border-zinc-800 hover:border-bpPink transition group">
+                <i class="fa-solid fa-music text-3xl text-zinc-600 group-hover:text-bpPink transition"></i>
+            </div>
+            <div class="h-64 bg-bpCard rounded-2xl flex items-center justify-center border border-zinc-800 hover:border-bpPink transition group">
+                <i class="fa-solid fa-star text-3xl text-zinc-600 group-hover:text-bpPink transition"></i>
+            </div>
+            <div class="h-64 bg-bpCard rounded-2xl flex items-center justify-center border border-zinc-800 hover:border-bpPink transition group">
+                <i class="fa-solid fa-heart text-3xl text-zinc-600 group-hover:text-bpPink transition"></i>
+            </div>
+            <div class="h-64 bg-bpCard rounded-2xl flex items-center justify-center border border-zinc-800 hover:border-bpPink transition group">
+                <i class="fa-solid fa-bolt text-3xl text-zinc-600 group-hover:text-bpPink transition"></i>
+            </div>
+            <div class="h-64 bg-bpCard rounded-2xl flex items-center justify-center border border-zinc-800 hover:border-bpPink transition group">
+                <i class="fa-solid fa-crown text-3xl text-zinc-600 group-hover:text-bpPink transition"></i>
+            </div>
+            <div class="h-64 bg-bpCard rounded-2xl flex items-center justify-center border border-zinc-800 hover:border-bpPink transition group">
+                <i class="fa-solid fa-fire text-3xl text-zinc-600 group-hover:text-bpPink transition"></i>
+            </div>
+            <div class="h-64 bg-bpCard rounded-2xl flex items-center justify-center border border-zinc-800 hover:border-bpPink transition group">
+                <i class="fa-solid fa-gem text-3xl text-zinc-600 group-hover:text-bpPink transition"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 text-center text-zinc-600 text-[10px] border-t border-zinc-900 uppercase tracking-widest">
+        <p>&copy; 2026 BLACKPINK Fan Hub. Designed for BLINKs Worldwide.</p>
+    </footer>
+
+</body>
+</html>
